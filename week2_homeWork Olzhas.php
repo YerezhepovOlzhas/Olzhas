@@ -4,8 +4,7 @@
 
 //echo "<br>";
 
-//$number = 6.65;
-//var_dump(round($number, 1));
+//var_dump(round(6.65, 1, PHP_ROUND_HALF_EVEN));
 
 //echo "<br>";
 
