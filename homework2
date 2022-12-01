@@ -1,0 +1,65 @@
+<?php
+
+//Задание 1
+
+//echo '<pre>';
+//
+//date_default_timezone_set('UTC') . '<br>';
+//  echo 'UTC: ' . date('H:i:s d.m.Y') . '<br>';
+//
+//date_default_timezone_set('Europe/London') . '<br>';
+//  echo 'Europe/London - ' . date('H:i:s d.m.Y') . '<br>';
+//
+//date_default_timezone_set('Europe/Paris') . '<br>';
+//  echo 'Europe/Paris - ' . date('H:i:s d.m.Y') . '<br>';
+//  echo '</pre>';
+
+//Задание 2
+
+//echo "Мой день рождения: 24 Апреля 1997 год" . '<br>';
+//echo "Текущая дата: " . date('d M Y') . '<br>';
+//$now = time();
+//
+//$dr = mktime(0, 0, 0, 4, 24, 2023);
+//
+//$year =(date('Y') + 1);
+//
+//$dr = mktime(0,0,0,4,24,$year);
+//
+//$difference =  ($dr - $now);
+//
+//$days = ($difference / 86400);
+//
+//echo ("Осталось дней до дня даты рождения: " . floor($days)) . " дней.";
+
+//Задание 3
+//echo "Текущая дата: " . date('d M Y') . '<br>';
+//
+//$now = time();
+//
+//$ny = mktime(0, 0, 0, 1,1,2023);
+//
+//$difference =  ($ny - $now);
+//
+//$days = ($difference / 86400);
+//
+//echo ("Осталось до нового года осталось: " . floor($days)) . " день.";
+
+//Задание 4
+
+//$randomday = rand(10, 100);
+//$randomdayText = "day";
+//$currentTime = time();
+//$year = (int)date('Y')+1;
+//$newTime = strtotime("+{$randomday} {$randomdayText}", strtotime("{30 november $year}"));
+//echo date('d.m.Y H:i:s', $newTime);
+
+
+
+//Задание 5
+//echo 'День рождения: 24.04.1997' . '<br>';
+//$timeZone = new DateTimeZone ( 'Asia/Almaty' );
+//$datetime1 = new DateTime ( '1997-04-24 10:00:00', $timeZone );
+//$datetime2 = new DateTime ();
+//$interval = $datetime1->diff ( $datetime2 );
+//echo $interval->format ("Текущий возраст: " . '%y лет');
