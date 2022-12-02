@@ -50,8 +50,8 @@
 //$randomday = rand(10, 100);
 //$randomdayText = "day";
 //$currentTime = time();
-//$year = (int)date('Y')+1;
-//$newTime = strtotime("+{$randomday} {$randomdayText}", strtotime("{30 november $year}"));
+//$year = (int)date('Y');
+//$newTime = strtotime("+{$randomday} {$randomdayText}", strtotime("30 november $year"));
 //echo date('d.m.Y H:i:s', $newTime);
 
 
