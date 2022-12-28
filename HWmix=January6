@@ -51,20 +51,6 @@
 
 //Задание 5
 
-function maxnp(...$nums){
-        $maxn = $nums[0];
-         foreach ($nums as $n) {
-             if ($maxn < $n) {
-                 $maxn = $n;
-             }
-
-         }
-         echo "Max number is: ", $maxn;
-}
-maxnp(12,4,15,8,0,30);
-
-
-//------------------------------------------------------
 //function maxc($arr){
 //        $maxn = $arr[0];
 //         for ($i=1; $i<count($arr); $i++) {
