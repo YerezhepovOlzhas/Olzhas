@@ -1,0 +1,77 @@
+//Задание 4.1
+
+<?php
+
+if (isset($_GET['name'])){
+
+    var_dump($_GET);
+}
+
+?>
+
+<!-- дописать не хватающих атрибутов -->
+<form method="get">
+    Имя: <input type="text" name="name">
+    <button type="submit">отправить</button>
+</form>
+
+
+//Задание 4.2
+
+<?php
+/*
+вывести здесь то что пришло из формы (как угодно)
+не забудьте проверить isset
+*/
+$name = $_POST['name'] ?? '';
+$age = $_POST['age'] ?? '';
+
+if (!empty($name) && !empty($age)) {
+    if (!is_numeric($age)) {
+        $age = '';
+        echo 'введите в поле возраст число';
+    } else {
+        echo "Привет {$name}, твой возраст: {$age}";
+    }
+}
+?>
+
+<!-- дописать не хватающих атрибутов -->
+<form method="post">
+    Имя: <input type="text" name="name" value="<?= $name ?>">
+    Возраст: <input type="text" name="age" value="<?= $age ?>">
+    <button type="submit">отправить</button>
+</form>
+
+//Задание 4.3
+
+<?php
+/*
+вывести здесь то что пришло из формы (как угодно)
+не забудьте проверить isset
+*/
+var_dump($_POST);
+
+?>
+
+<!-- Задайте правильное название в атрибуте name, чтобы данные из этой формы отправились как массив -->
+<form method="post">
+    <div>
+        Первый ученик:<br> ФИО: <input type="text" name="student[]">
+    </div>
+    <hr>
+    <div>
+        Второй ученик:<br> ФИО: <input type="text" name="student[]">
+    </div>
+    <hr>
+    <div>
+        Третий ученик:<br> ФИО: <input type="text" name="student[]">
+    </div>
+    <hr>
+    <div>
+        Четвертый ученик:<br> ФИО: <input type="text" name="student[]">
+    </div>
+    <hr>
+
+    <button type="submit">отправить</button>
+</form>
